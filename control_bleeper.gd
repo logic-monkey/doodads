@@ -8,7 +8,7 @@ var select = preload("select.wav")
 func _ready():
 	
 	bus = "effects input"
-	volume_db = linear_to_db(0.5)
+	#volume_db = linear_to_db(0.5)
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	
 	await get_tree().process_frame
