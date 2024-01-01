@@ -5,11 +5,10 @@ class_name ActorGraphics2D
 var prior_state = "idle"
 
 func _set_anim(state):
-	pass
+	$AnimationPlayer.play(state)
 
-func _init():
-	_set_anim.call_deferred(current_state)
-	
+func _ready():
+	_set_anim(current_state)
 	
 func spawn_dust_mote(start: Node2D, end: Node2D):
 	if not has_node("/root/_PARTICLE"): return
