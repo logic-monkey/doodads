@@ -1,8 +1,8 @@
 extends AudioStreamPlayer2D
 class_name ControlBleeper
 
-var blip = preload("blip.wav")
-var select = preload("select.wav")
+var blip = preload("fauxbit-sounds/blip.wav")
+var select = preload("fauxbit-sounds/select.wav")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

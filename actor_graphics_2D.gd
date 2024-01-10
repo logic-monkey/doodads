@@ -22,5 +22,6 @@ func spawn_dust_mote(start: Node2D, end: Node2D):
 	tween.tween_property(c, "global_position", end.global_position, 0.5)\
 			.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	
+signal animation_done
 func play(state: String, direction = null):
 	pass

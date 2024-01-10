@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bghbegjgl8bs1"
-path="res://.godot/imported/select.wav-cb7b9f90007b4474e79bb8eaf4b64886.sample"
+path="res://.godot/imported/select.wav-0690e1bb58f2d6c5f7ab584e9d23b434.sample"
 
 [deps]
 
-source_file="res://addons/doodads/select.wav"
-dest_files=["res://.godot/imported/select.wav-cb7b9f90007b4474e79bb8eaf4b64886.sample"]
+source_file="res://addons/doodads/fauxbit-sounds/select.wav"
+dest_files=["res://.godot/imported/select.wav-0690e1bb58f2d6c5f7ab584e9d23b434.sample"]
 
 [params]
 
