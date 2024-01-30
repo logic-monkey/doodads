@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://dln2ur20kvse1"]
+
+[ext_resource type="Script" path="res://addons/doodads/captioned_texture_button.gd" id="1_wyiwe"]
+[ext_resource type="Script" path="res://addons/doodads/control_bleeper.gd" id="2_voxix"]
+
+[node name="CaptionedTextureButton" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_wyiwe")
+
+[node name="ControlBleeper" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource("2_voxix")
+
+[node name="caption_holder_holder" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="caption_holder" type="Node2D" parent="caption_holder_holder"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.501961)
+
+[node name="caption" type="Label" parent="caption_holder_holder/caption_holder"]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_focus_exited"]
