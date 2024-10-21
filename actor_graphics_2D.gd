@@ -8,7 +8,7 @@ func _set_anim(state):
 	$AnimationPlayer.play(state)
 
 func _ready():
-	_set_anim(current_state)
+	play(current_state)
 	
 func spawn_dust_mote(start: Node2D, end: Node2D):
 	if not has_node("/root/_PARTICLE"): return
@@ -23,5 +23,5 @@ func spawn_dust_mote(start: Node2D, end: Node2D):
 			.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	
 signal animation_done
-func play(state: String, direction = null):
-	pass
+func play(state: String, _direction = null):
+	_set_anim(state)
