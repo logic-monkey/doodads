@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dln2ur20kvse1"]
 
-[ext_resource type="Script" path="res://addons/doodads/captioned_texture_button.gd" id="1_wyiwe"]
-[ext_resource type="Script" path="res://addons/doodads/control_bleeper.gd" id="2_voxix"]
+[ext_resource type="Script" uid="uid://cpli67gn2t67t" path="res://addons/doodads/captioned_texture_button.gd" id="1_wyiwe"]
+[ext_resource type="Script" uid="uid://6ag5uc34rd1g" path="res://addons/doodads/control_bleeper.gd" id="2_voxix"]
 
 [node name="CaptionedTextureButton" type="TextureButton"]
 anchors_preset = 8
